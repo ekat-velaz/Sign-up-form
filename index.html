@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign-up form</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    <link rel="stylesheet" media="screen" href="https://fontlibrary.org//face/lucymar-sans" type="text/css"/>
+    <link rel="icon" type="image/x-icon" href="images/favicon.png">
+</head>
+<body>
+<div class="content">
+    <div class="pic-sidebar">
+        <div class="logo-bg">
+          <img src="images/logo.png" alt="logo" class="logo">
+        </div>
+        <div class="pic-rights">Photo by Alexander Grey on Unsplash </div>
+    </div>
+
+    <div class="form-space">
+        <div class="general-text">
+            <h1 >This is not a real online service.</h1>
+            <p >Do you want to find your soulmate? Create an account and start dating with <span class="bold-span"> Swelo</span>!</p>
+            <p >Get a taste of <span class="bold-span">sweet love</span>.</p>
+        </div>
+        <form action="" method="post">
+            <div class="form-bg">
+                <legend >Let's do that!</legend>
+                <div class="form-container">
+        
+                    <ul class="form-content">
+                        <label for="first_name">FIRST NAME</label>
+                        <input type="text" name="first_name" id="first_name" required placeholder="Bob..">
+                    </ul>
+
+                    <ul class="form-content error">
+                        <label for="last_name">LAST NAME</label>
+                        <input type="text" name="last_name" id="last_name" required placeholder="Loverman..">
+                    </ul>
+
+                    <ul class="form-content">
+                        <label for="email">EMAIL</label>
+                        <input type="email" name="email" id="email" required placeholder="sweetlover@mail.com">
+                    </ul>
+
+                    <ul class="form-content">
+                        <label for="phone_num">PHONE NUMBER</label>
+                        <input type="tel" name="phone_num" id="phone_num" required placeholder="+44xxxxxxx" pattern="^^(\+\d{1,2}\s?)?\(?\d{3}\)?[\s.-]?\d{3}[\s.-]?\d{4}$">
+                    </ul>
+
+                    <ul class="form-content">
+                        <label for="password">PASSWORD</label>
+                        <input type="password" name="password" id="password" required pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,10}$">
+                    </ul>
+
+                    <ul class="form-content">
+                        <label for="confirm_password">CONFIRM PASSWORD</label>
+                        <input type="password" name="confirm_password" id="confirm_password"required pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,10}$">
+                    </ul>
+
+                </div>
+            </div>
+            <button type="submit" class="submit-button" >Create account</button>
+        </form>
+        <p class="login">Already have an account? <span class="bold-span"> Log in</span></p>
+    </div>
+</div>
+</body>
+</html>
