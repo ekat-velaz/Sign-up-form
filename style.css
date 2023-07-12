@@ -1,197 +1,369 @@
-
 /* Meyer reset */
 
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
 }
 /* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
-footer, header, hgroup, menu, nav, section {
-	display: block;
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
 }
 body {
-	line-height: 1;
+  line-height: 1;
 }
-ol, ul {
-	list-style: none;
+ol,
+ul {
+  list-style: none;
 }
-blockquote, q {
-	quotes: none;
+blockquote,
+q {
+  quotes: none;
 }
-blockquote:before, blockquote:after,
-q:before, q:after {
-	content: '';
-	content: none;
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
 }
 table {
-	border-collapse: collapse;
-	border-spacing: 0;
+  border-collapse: collapse;
+  border-spacing: 0;
 }
 
 /* Custom properties */
 :root {
-	--bg-color: rgba(232, 213, 231, 0.86);
-	--card-bg-color: rgba(255, 255, 255, 0.781);
-    --pink-text-color: rgb(190, 61, 192);
-	--box-shadow: 3px 3px 5px rgb(146, 168, 176);
-	--blue-button-bg: rgb(167, 210, 247);
-	--error-border: rgb(238, 11, 11);
-	--error-bg: rgb(242, 218, 218);
+  --bg-color: rgba(232, 213, 231, 0.86);
+  --card-bg-color: rgba(255, 255, 255, 0.781);
+  --pink-text-color: rgb(190, 61, 192);
+  --box-shadow: 3px 3px 5px rgb(146, 168, 176);
+  --blue-button-bg: rgb(167, 210, 247);
+  --error-border: rgb(238, 11, 11);
+  --error-bg: rgb(242, 218, 218);
 }
 
 /* General space */
 body {
-	background-color: var(--bg-color);
+  background-color: var(--bg-color);
 }
 
 .content {
-	display: flex;
-	height: 100vh;
+  display: flex;
+  height: 100vh;
 }
 
 /* Sidebar space */
 .pic-sidebar {
-	background-image: url(images/candy-picture.jpg);
-	background-repeat: no-repeat;
-	background-size: cover;
-	background-position: center;
-	display: flex;
-	flex-direction: column;
-	justify-content: space-between;
-	align-items: center;
-	width: 35%;
-	min-width: 200px;
+  background-image: url(images/candy-picture.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  width: 35%;
+  min-width: 200px;
 }
- 
+
 .logo {
-	width: 80%;
+  width: 80%;
 }
 
 .logo-bg {
-	background-color: var(--card-bg-color);
-	width: 100%;
-	padding-top: 1.6vmax;
-	padding-bottom: 1.6vmax;
-	margin-top: 10vmax;
-	display: flex;
-	justify-content: center;
+  background-color: var(--card-bg-color);
+  width: 100%;
+  padding-top: 1.6vmax;
+  padding-bottom: 1.6vmax;
+  margin-top: 10vmax;
+  display: flex;
+  justify-content: center;
 }
 
 .pic-rights {
-	margin: 30px;
-	font-size: 0.8rem;
-	color: var(--pink-text-color);
-	font-family: 'LucymarSansRegular';
-    font-weight: normal;
-    font-style: normal;
+  margin: 30px;
+  font-size: 0.8rem;
+  color: var(--pink-text-color);
+  font-family: "LucymarSansRegular";
+  font-weight: normal;
+  font-style: normal;
 }
 
 /* Form space */
 .form-space {
-	max-height: 100vh;
-	display: flex;
-	flex-direction: column;
-	gap: 1vmax;
-	font-family: 'LucymarSansRegular';
-   font-weight: normal;
-   font-style: normal;
-   
+  max-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  gap: 1vmax;
+  font-family: "LucymarSansRegular";
+  font-weight: normal;
+  font-style: normal;
 }
 
 .general-text {
-	font-size: 4vmin;
-	margin-left: 4vmax;
-	margin-right: 4vmax;
-	margin-top: 3vmax;
-	margin-bottom: 2vmax;
-	display: flex;
-	flex-direction: column;
-	gap:1vmax;
-	width: 50vmax;
-	
+  font-size: 4vmin;
+  margin-left: 4vmax;
+  margin-right: 4vmax;
+  margin-top: 3vmax;
+  margin-bottom: 2vmax;
+  display: flex;
+  flex-direction: column;
+  gap: 1vmax;
+  width: 50vmax;
 }
 
 .form-bg {
-	box-shadow: var(--box-shadow);
-	background-color: var(--card-bg-color);
-	padding-top: 1vmax;
-	padding-bottom: 2vmax;
-	padding-left: 4vmax;
-	padding-right: 4vmax;
-	width: 100%;
+  box-shadow: var(--box-shadow);
+  background-color: var(--card-bg-color);
+  padding-top: 1vmax;
+  padding-bottom: 2vmax;
+  padding-left: 4vmax;
+  padding-right: 4vmax;
+  width: 100%;
 }
 
 .form-container {
-	display: flex;
-	gap: 2vmax;
-	flex-wrap: wrap;
-    max-width: 500px
+  display: flex;
+  gap: 2vmax;
+  flex-wrap: wrap;
+  max-width: 500px;
 }
 
 legend {
-	font-size: 4vmin;
-	margin-bottom: 1vmax;
+  font-size: 4vmin;
+  margin-bottom: 1vmax;
 }
 
 .form-content {
-	display: flex;
-	flex-direction: column;
-	gap: 7px;
-	width: 200px;
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+  width: 200px;
 }
 
 input {
-	height: 2vmax;
-	width: 200px;
+  height: 2vmax;
+  width: 200px;
 }
 
 input:focus:invalid {
-	background-color: var(--error-bg);
-	outline-color: var(--error-border);
+  background-color: var(--error-bg);
+  outline-color: var(--error-border);
 }
 
 input:focus {
-	box-shadow: var(--box-shadow);
+  box-shadow: var(--box-shadow);
 }
 
 .submit-button {
-	width: 8em;
-	height: 1.8em;
-	font-size: 3.5vmin;
-	font-family: inherit;
-	font-weight: bold;
-	margin-left: 60px;
-	margin-top: 30px;
-	background-color: vat(--blue-button-bg);
-	border-style: none;
-	border-radius: 5px;
-	box-shadow: var(--box-shadow);
-
+  width: 8em;
+  height: 1.8em;
+  font-size: 3.5vmin;
+  font-family: inherit;
+  font-weight: bold;
+  margin-left: 60px;
+  margin-top: 30px;
+  background-color: vat(--blue-button-bg);
+  border-style: none;
+  border-radius: 5px;
+  box-shadow: var(--box-shadow);
 }
 
 .login {
-	margin-top: 1vmax;
-	margin-left: 4.5vmax;
-	font-size: 2.5vmin;
+  margin-top: 1vmax;
+  margin-left: 4.5vmax;
+  font-size: 2.5vmin;
 }
 
 .bold-span {
-	font-weight: 900;
+  font-weight: 900;
+}
+
+#toggle-btn::before,
+#toggle-confirm-btn:before {
+  content: "\f06e";
+  font-family: fontAwesome;
+  color: black;
+  font-size: 15px;
+}
+
+#toggle-btn.hide::before,
+#toggle-confirm-btn.hide:before {
+  content: "\f070";
+  font-family: fontAwesome;
+  font-size: 15px;
+}
+
+.pswd-input {
+  display: grid;
+  grid-auto-flow: column;
+  align-items: center;
+  gap: 5px;
+  width: 200px;
+  height: 2vmax;
+}
+
+#toggle-btn,
+#toggle-confirm-btn {
+  padding: 7px;
+  border-radius: 50px;
+  background-color: var(--bg-color);
+}
+
+.pswd-input > input {
+  width: 170px;
+}
+
+.validation,
+.confirm-error {
+  background-color: var(--card-bg-color);
+  display: grid;
+  gap: 5px;
+  border-radius: 10px;
+  padding: 10px;
+  position: absolute;
+  top: 70px;
+  pointer-events: none;
+  transform: translateY(-10px);
+  transition: opacity 150ms ease-in-out, transform 150ms ease-in-out;
+  opacity: 0;
+}
+
+#password-container,
+#confirm-container {
+  position: relative;
+}
+
+input#password:focus ~ ul.validation,
+input#confirm-password:focus ~ .confirm-error {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.validation li,
+.confirm-error {
+  color: red;
+}
+
+.validation li::before {
+  content: "\f192";
+  color: red;
+  font-size: 12px;
+  font-family: fontAwesome;
+  padding: 5px;
+}
+
+.validation li.valid::before {
+  content: "\f058";
+  color: greenyellow;
+  font-size: 12px;
+  font-family: fontAwesome;
+  padding: 5px;
+}
+
+.validation li.valid,
+.confirm-error.valid {
+  color: green;
+}
+
+button:hover {
+  background-color: var(--pink-text-color);
+}
+
+input:hover {
+  background-color: var(--bg-color);
 }
